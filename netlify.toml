@@ -8,7 +8,8 @@
 
 [functions]
   # Increase timeout for database operations
-  timeout = 30
+  [functions.timeout]
+  seconds = 30
   # Let Netlify bundle all dependencies automatically
   included_files = ["server/**/*", "shared/**/*"]
 
