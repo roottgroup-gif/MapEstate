@@ -8,8 +8,7 @@
 
 [functions]
   # Increase timeout for database operations
-  [functions.timeout]
-  seconds = 30
+  timeout = 30
   # Let Netlify bundle all dependencies automatically
   included_files = ["server/**/*", "shared/**/*"]
 
@@ -29,8 +28,8 @@
 [build.environment]
   # Set Node.js version
   NODE_VERSION = "18"
-  # Ensure devDependencies are installed during production builds
-  NODE_ENV = "development"
+  # Production environment
+  NODE_ENV = "production"
 
 # Environment variables (set these in Netlify dashboard)
 # SESSION_SECRET = "your-secure-random-string-here"
